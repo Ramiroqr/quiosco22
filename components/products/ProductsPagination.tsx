@@ -21,6 +21,7 @@ export default function ProductsPagination({pages, totalPages}: ProductsPaginati
 
         {pagesIcon.map(page => (
             <Link
+                key={page}
                 href={`/admin/products?page=${page}`}
                 className={`${pages === page ? 'bg-slate-200' : 'bg-white'} px-4 py-2 text-sm text-gray-900 ring-1 ring-inset ring-gray-300 focus:z-20 focus:outline-offset-0`}
             >{page}</Link>
