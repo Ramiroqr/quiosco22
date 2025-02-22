@@ -40,7 +40,7 @@ export default function ProductTable({products}: ProductTableProps) {
                                             {formatCurrency(product.price)}
                                         </td> 
                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
-                                            {product.categoryId}
+                                            {product.category.name}
                                         </td>
                                         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
                                             <Link
