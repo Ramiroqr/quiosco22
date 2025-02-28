@@ -28,7 +28,7 @@ export default function EdithProductForm({children} : {children: React.ReactNode
     }
 
     const response = await updateProduct(result.data, id)
-    if(!response?.errors) {
+    if(response?.errors) {
       response?.errors.forEach(issue => {
         toast.error(issue.message)
       })

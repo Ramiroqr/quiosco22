@@ -46,6 +46,8 @@ export default function ImageUpload({image} : {image: string | undefined}) {
                     style={{objectFit: 'contain'}}
                     src={imageURl}
                     alt="Imagen de producto"
+                    width={8}
+                    height={8}
                   />
                 </div>
               )}
@@ -60,6 +62,7 @@ export default function ImageUpload({image} : {image: string | undefined}) {
                   fill
                   src={getImagePath(image)}
                   alt="Imagen Producto"
+                  style={{objectFit: 'contain'}}
                 />
               </div>
             </div>
